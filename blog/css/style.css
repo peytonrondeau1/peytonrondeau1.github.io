@@ -1,0 +1,207 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - DONE @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 1.5rem auto;
+    width:90%;
+    min-width: 56.25rem;
+}
+
+@font-face{
+    font-family: robotoslab;
+    src: url("../fonts/serif/robotoslab-regular.tiff") format("truetype");
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: montserrat;
+    src: url("../fonts/san-serif/monserrat-regular.tiff") format("truetype");
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: ultra;
+    src: url("../fonts/serif/ultra-regular.tiff") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-family: robotoslab, "Georgia", serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.25rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+p {
+    font-family: montserrat, "arial", sans-serif;
+    font-size: 0.75rem;
+}
+
+.main-section{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 1rem;
+}
+
+.subsection{
+    display: flex;
+
+}
+
+section>figure{
+    background-color: beige;
+}
+
+aside{
+    grid-column: 2;
+    grid-row: 1;
+    border-left: 1px solid black; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+aside>h3{
+     border-top: 1px solid black;
+    padding-top: 1rem;
+}
+
+.expand{
+    padding-bottom: 0.25rem;
+    text-decoration: none;
+    font-size: 0.25rem;
+}
+
+img {
+    width: 100%;
+}
+
+.article-image{
+    float: left;
+    padding-right: 0.5rem;
+    width: 30%;
+}
+
+nav{
+    border-top: solid black;
+    border-bottom: solid black;
+    padding: 1rem;
+}
+
+nav>a{
+    font-size: 1.5rem;
+    margin: 1rem; 
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.highlight{
+    font-size: 4rem;
+    background-color: #732C2C;
+    color: #c8c4b7;
+    margin: 1rem;
+    letter-spacing: 0.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.125rem #313c40;
+}
+
+h1{
+    text-align: center;
+    transform: rotate(-5deg);
+}
+
+a:visited{
+    text-decoration: line-through;
+    transform: rotate(-5deg);
+}
+
+/* ------ I was just having fun with the hovor element! I know it's not part of the assignment ------ */
+nav>a:hover{
+    font-size: 2rem;
+    background-color: #732C2C;
+    color: #fff;
+    margin: 1rem;
+    letter-spacing: 0.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.125rem #313c40; 
+}
+
+button{
+    font-family: ultra;
+      font-size: 1.5rem;
+    background-color: #4F6A73;
+    color: white;
+    margin: 1rem;
+    letter-spacing: 0.25rem;
+    border-radius: 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.125rem #313c40;
+}
+
+
+
